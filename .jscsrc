@@ -1,0 +1,14 @@
+{
+	"validateQuoteMarks":false,
+	"requireSpacesInAnonymousFunctionExpression":false,
+	"safeContextKeyword":false,
+	"validateIndentation":"\t",
+	"requireSpaceAfterKeywords":false,
+	"requireSpaceBeforeBlockStatements":false,
+	"requireSemicolons":false,
+	"disallowQuotedKeysInObjects":false,
+	"validateQuoteMarks":false,
+	"requireTrailingComma":false,
+	"requireSpacesInsideObjectBrackets":false,
+	"validateLineBreaks":false,
+}
