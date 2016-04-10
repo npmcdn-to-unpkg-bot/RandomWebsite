@@ -3,18 +3,25 @@
 		<title>
 			Random Website
 		</title>
+		<script src="//cdn.temasys.com.sg/skylink/skylinkjs/0.6.x/skylink.complete.min.js"></script>
 		<script src="jquery-2.2.1.min.js"></script>
 		<script src="angular.min.js"></script>
 		<script src="uiRouter.js"></script>
 		<script src="lodash.js"></script>
+		<script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
 		<script src="index.js"></script>
 		<link href="style.css" rel="stylesheet"></link>
 		<link href="css/font-awesome.css" rel="stylesheet"></link>
 		<link href="css/font-awesome.min.css" rel="stylesheet"></link>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://npmcdn.com/angular-toastr/dist/angular-toastr.css" />
 	</head>
 <body ng-app="app" ng-controller="appController">
-	<div id="header">TicTacToe</div>
+	<div id="header">
+		<div class="gameName">TicTacToe</div>
+		<div class="message" ng-show="peerService.connected">{{turnMessage}}</div>
+		<div class="message" ng-show="!peerService.connected">Loading...</div>
+	</div>
 	<div id="container" ui-view>
 	</div>
 </body>

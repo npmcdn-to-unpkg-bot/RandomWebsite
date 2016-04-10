@@ -1,4 +1,6 @@
 body {
+    min-width: 650px;
+	min-height: 610px;
 	margin: 0 0;
 	display: flex;
 	flex-direction: column;
@@ -8,8 +10,7 @@ body {
 	background-color: #71A3B9;
 	padding: 10px 10px;
 	color: white;
-	text-align: center;
-
+	height: 42px;
 }
 
 #container {
@@ -18,6 +19,15 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 10px 10px;
+}
+
+.gameName {
+	float: left;
+	position: absolute;
+}
+
+.message {
+	text-align: center;
 }
 
 .game {

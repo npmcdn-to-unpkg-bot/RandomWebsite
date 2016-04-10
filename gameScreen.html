@@ -1,4 +1,6 @@
-<div class="game">
+<img ng-hide="peerService.connected" src="http://downgraf.com/wp-content/uploads/2014/09/01-progress.gif">
+</img>
+<div class="game" ng-hide="!peerService.connected">
 	<div class="square square-{{$index}}" ng-click="editSquare($index)" ng-repeat="square in squares">
 			<i class="ng-class: square.state"></i>
 	</div>
