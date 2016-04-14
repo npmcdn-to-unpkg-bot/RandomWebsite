@@ -19,8 +19,9 @@
 <body ng-app="app" ng-controller="appController">
 	<div id="header">
 		<div class="gameName">TicTacToe</div>
-		<div class="message" ng-show="peerService.connected">{{turnMessage}}</div>
-		<div class="message" ng-show="!peerService.connected">Loading...</div>
+		<div>
+			<div class="message">{{messageService.priorityMessage}}</div>
+		</div>
 	</div>
 	<div id="container" ui-view>
 	</div>
